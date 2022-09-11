@@ -1,30 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Prueba from "./components/demo";
-import Repetir from './components/repetir';
+import { Navbar1 } from './components/Navbar1';
+import { Car } from './components/Car';
+import { Terms } from './components/Terms';
+import {Route, Routes} from 'react-router-dom';
 
-function App() {
+// // Componente principal
+//El archivo tiene el mismo nombre que la funcion
+
+export const App = () => {
   return (
-    <div className="App">
-      
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-       <Prueba/>
-      </header>
+    <div>
+      <Navbar1/>
+      <Routes>
+        <Route  path = "/" element = {<> <Car/></>}/>
+        {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
+        <Route  path = "/terms" element = {<Terms/>}/>
+      </Routes>
     </div>
-  );
+  )
 }
-
-export default App;

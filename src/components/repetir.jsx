@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import Prueba from "./demo";
+
 
 class Repetir extends Component {
     state={
@@ -7,7 +7,7 @@ class Repetir extends Component {
     }
     render(){
       return (
-      this.state.list.map(<Prueba.render/>)    
+      this.state.list.map()    
       );
     }
 }
