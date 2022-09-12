@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import imagen_car_1 from "../resources/background.png";
 import imagen_car_2 from "../resources/hamburguesa_resize.png";
-import imagen_car_3 from "../resources/papas_resize.png";
+import imagen_car_3 from "../resources/papas_resize.PNG";
 
 export const Car = () => {
 
