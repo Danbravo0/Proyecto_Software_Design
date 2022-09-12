@@ -4,6 +4,7 @@ import './index.css';
 import {App} from './App'; //Las llaves sno necesarias porque rafc no tiene export default
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import "./custom.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
