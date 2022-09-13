@@ -15,7 +15,7 @@ export const App = () => {
     <div>
       <Navbar1/>
       <Routes>
-        <Route  path = "/" element = {<> <Car/> <TripleColumnbutton/> <Modal1/> <Modal2/> </>}/>
+        <Route  path = "/" element = {<> <Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> </>}/>
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<Terms/>}/>
 
