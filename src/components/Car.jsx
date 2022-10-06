@@ -5,6 +5,8 @@ import imagen_car_1 from "../resources/background.png";
 import imagen_car_2 from "../resources/hamburguesa_resize.png";
 import imagen_car_3 from "../resources/papas_resize.png";
 
+// Guardar la informacion que quieres mostrar en from.io utilizar la api de form.io en react
+
 export const Car = () => {
 
     const [index, setIndex] = useState(0);

@@ -7,6 +7,7 @@ import {Route, Routes} from 'react-router-dom';
 import { TripleColumnbutton } from './components/TripleColumnbutton';
 import { Modal1 } from './components/NewsletterModal';
 import { Modal2 } from './components/ReservationModal';
+import { Formioreservation } from './components/Formioreservation';
 // // Componente principal
 //El archivo tiene el mismo nombre que la funcion
 
@@ -15,7 +16,7 @@ export const App = () => {
     <div>
       <Navbar1/>
       <Routes>
-        <Route  path = "/" element = {<> <Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> </>}/>
+        <Route  path = "/" element = {<><Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/>  </>}/>
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<Terms/>}/>
 
