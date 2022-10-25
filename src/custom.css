@@ -1,16 +1,16 @@
 .color-nav{
-    background-color: #8d7664;
+    background-color: #000000;
 }
 
 .texto-car-1{
     font-family: 'Times New Roman', Times, serif ;
-    color: #592a13;
+    color: white;
 }
 
 
 .texto-car-2{
     font-family: 'Times New Roman', Times, serif ;
-    color: #592a13;
+    color: white;
     margin-left: -900px;
     margin-bottom: 150px;
     rotate: -30deg;
@@ -18,15 +18,19 @@
 
 .texto-car-3{
     font-family: 'Times New Roman', Times, serif ;
-    color: #cb8924;
+    color: white;
     margin-left: right;
     margin-bottom: 150px;
     rotate: -30deg;
 }
 
 .nav-item-text{
-    font-family: 'comic sans ms', sans-serif; /*Mejor fuente y nadie puede decir lo contrario */
-    color: black; 
+    font-family: 'Times New Roman'; /*Mejor fuente y nadie puede decir lo contrario */
+    color: white; 
+}
+
+.nav.text {
+    color: white;
 }
 
 

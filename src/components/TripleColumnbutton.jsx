@@ -36,23 +36,8 @@ export function TripleColumnbutton() {
         <Card.Text>
         Exquisita comida típica chilena
         </Card.Text>
-        <Link to="/comida">
+        <Link to="/tienda">
         <Button variant="primary">Ver Comida »</Button>
-        </Link>
-
-      </Card.Body>
-    </Card>
-        </Col>
-        <Col>
-        <Card style={{ width: '18rem' }} className = "medidas-card">
-      <Image src={imagen_col_3} roundedCircle="true" width = "80%" />
-      <Card.Body>
-        <Card.Title>Bebida</Card.Title>
-        <Card.Text>
-        Porque no hay buena comida sin bebidas
-        </Card.Text>
-        <Link to="/bebidas">
-        <Button variant="primary">Ver Bebidas »</Button>
         </Link>
       </Card.Body>
     </Card>
