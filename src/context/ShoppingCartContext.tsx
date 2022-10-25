@@ -53,7 +53,7 @@ export function CarritoComprasProvider({children}:
     
     function increaseCarritoQuantity(id: number) {
         setItemsCarrito(currItems => {
-            if (currItems.find(item => item.id) == null){
+            if (currItems.find(item => item.id===id) == null){
                 return [...currItems, {id, cantidad: 1}]
             } //Si no tenemos este item en ningun lado, entonces le añadimos uno
             else{
@@ -72,7 +72,7 @@ export function CarritoComprasProvider({children}:
     
     function decreaseCarritoQuantity(id: number) {
         setItemsCarrito(currItems => {
-            if (currItems.find(item => item.id)?.cantidad === 1){
+            if (currItems.find(item => item.id===id)?.cantidad === 1){
                 return currItems.filter(item => item.id !== id)
             } //Nueva lista de todos nuestros items quitandole el que le restamos
             else{

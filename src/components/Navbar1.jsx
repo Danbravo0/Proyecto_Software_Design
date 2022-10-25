@@ -4,7 +4,7 @@ import { UsarCarritoCompras } from '../context/ShoppingCartContext.tsx'
 
 export function Navbar1() {
   // const 
-  const { cartQuantity } = UsarCarritoCompras()
+  const { cantidadCarrito } = UsarCarritoCompras()
   return (
     <NavbarBs sticky="top" className="color-nav">
       <Container>
@@ -24,7 +24,7 @@ export function Navbar1() {
 
         </Nav>
 
-        {cartQuantity > 0 && (<Button
+        {cantidadCarrito > 0 && (<Button
          style = {{width : "3rem", height : "3rem", position :"relative", color : "white", backgroundColor : "black"}} className="btn-outline-dark rounded-circle">
           <Nav.Link to="/tienda" as={NavLink} style={{position: "relative"}}>
                   <span className="material-symbols-outlined">
@@ -34,7 +34,7 @@ export function Navbar1() {
 
           <div className="rounded-circle d-flex justify-content-center align-items-center" style =
           {{color : "black", width : "1.5rem", height : "1.5rem", position : "absolute" ,bottom : 0, right:0, transform : "translate(25%,25%)" ,  backgroundColor : "white"}}>
-          {cartQuantity}
+          {cantidadCarrito}
           </div>
 
         </Button>
