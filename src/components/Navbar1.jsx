@@ -26,7 +26,7 @@ export function Navbar1() {
 
         {cantidadCarrito > 0 && (<Button
          style = {{width : "3rem", height : "3rem", position :"relative", color : "white", backgroundColor : "black"}} className="btn-outline-dark rounded-circle">
-          <Nav.Link to="/tienda" as={NavLink} style={{position: "relative"}}>
+          <Nav.Link to="/carrito" as={NavLink} style={{position: "relative"}}>
                   <span className="material-symbols-outlined">
                     shopping_cart 
                   </span>
