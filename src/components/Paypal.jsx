@@ -4,11 +4,19 @@ import {
     PayPalButtons,
     usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
-
+import { PlataPaypal } from '../paginas/Paypal.tsx' ;
 // This values are the props in the UI
-const amount = "10000";
+
+const amount = MonedaPaypal();
 const currency = "USD";
 const style = {"layout":"vertical"};
+
+function MonedaPaypal () { 
+    
+    return PlataPaypal()
+}
+
+
 
 // Custom component to wrap the PayPalButtons and handle currency changes
 const ButtonWrapper = ({ currency, showSpinner }) => {

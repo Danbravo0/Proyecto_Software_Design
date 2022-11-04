@@ -25,7 +25,7 @@ export const App = () => {
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<Terms/>}/>
         <Route  path = "/tienda" element = {<><Tienda/> </>}/>
-        <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/></>}/>
+        <Route  path = "/carrito" element = {<><CarritoCompras/> </>}/>
 
       </Routes>
     </CarritoComprasProvider>
