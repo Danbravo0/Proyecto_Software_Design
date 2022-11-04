@@ -10,9 +10,8 @@ import { Modal1 } from './components/NewsletterModal';
 import { Modal2 } from './components/ReservationModal';
 // import { Formioreservation } from './components/Formioreservation';
 import { CarritoComprasProvider } from './context/ShoppingCartContext.tsx';
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { Paypal } from './components/Paypal';
-import { CarritoCompras } from './components/CarritoCompras.tsx';
+import { CarritoCompras } from './paginas/CarritoCompras.tsx';
 // // Componente principal
 //El archivo tiene el mismo nombre que la funcion
 
@@ -25,8 +24,8 @@ export const App = () => {
         <Route  path = "/" element = {<><Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> </>}/>
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<Terms/>}/>
-        <Route  path = "/tienda" element = {<><Tienda/> <Paypal/> </>}/>
-        <Route  path = "/carrito" element = {<><CarritoCompras/> </>}/>
+        <Route  path = "/tienda" element = {<><Tienda/> </>}/>
+        <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/></>}/>
 
       </Routes>
     </CarritoComprasProvider>

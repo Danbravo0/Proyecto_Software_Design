@@ -1,9 +1,27 @@
 import {Col, Row} from "react-bootstrap"
-import storeItems from "../data/items.json"
+// import storeItems from "../data/items.json"
 import { StoreItem } from "../components/StoreItem.tsx"
+import React, { useEffect, useState } from "react";
 
 
 export function Tienda() {
+
+  const [storeItems, setItems] = useState([]);
+  const formio = 'https://zzzeqquaxnnhddq.form.io/items/submission';
+  function pullJson() {
+      fetch(formio)
+      .then(response => response.json())
+      .then(data => {
+          setItems(data);
+      })
+  }
+
+  useEffect(() => {
+    pullJson();
+
+  }, [])
+
+
   return (
     <div className = "container">
       <h1>Tienda</h1>
