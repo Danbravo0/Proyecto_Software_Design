@@ -5,7 +5,6 @@ import { CarritoItem } from "../components/CarritoItem.tsx"
 import React, { useEffect, useState } from "react";
 // import storeItems from "../data/items.json"
 
-
 export function CarritoCompras() {
   const {itemsCarrito} = UsarCarritoCompras()
 
@@ -23,6 +22,8 @@ export function CarritoCompras() {
     pullJson();
 
   }, [])
+ 
+  
 
   return (
     <div>
@@ -38,9 +39,11 @@ export function CarritoCompras() {
                 const item = storeItems.find(i => i.data.id === CarritoItem.id)
                 return total + (item?.data.precio || 0) * CarritoItem.cantidad
               }, 0)
+              
             )}
           </div>
         </Stack>
-        </div>
+    </div>
+
   )
 }
