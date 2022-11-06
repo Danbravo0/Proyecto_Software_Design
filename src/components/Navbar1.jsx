@@ -18,6 +18,12 @@ export function Navbar1() {
           <Nav.Link to="/about" as={NavLink} className = "nav-item-text">
             About
           </Nav.Link>
+          <Nav.Link to="/tienda" as={NavLink} className = "nav-item-text">
+            Tienda
+          </Nav.Link>
+          <Nav.Link to="/eventos" as={NavLink} className = "nav-item-text">
+            Eventos
+          </Nav.Link>
 
 
 
@@ -25,7 +31,7 @@ export function Navbar1() {
         </Nav>
 
         {cantidadCarrito > 0 && (<Button
-         style = {{width : "3rem", height : "3rem", position :"relative", color : "white", backgroundColor : "black"}} className="btn-outline-dark rounded-circle">
+         style = {{width : "3rem", height : "3rem", position :"relative", color : "white", backgroundColor : "#333333"}} className="btn-outline-dark rounded-circle">
           <Nav.Link to="/carrito" as={NavLink} style={{position: "relative"}}>
                   <span className="material-symbols-outlined">
                     shopping_cart 
