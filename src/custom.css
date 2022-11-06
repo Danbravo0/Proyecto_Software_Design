@@ -68,3 +68,8 @@
     align-self: center;
     text-align: right;
 }
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+   }

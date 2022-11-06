@@ -14,6 +14,7 @@ import { Footer } from './components/Footer';
 import { CarritoComprasProvider } from './context/ShoppingCartContext.tsx';
 import { Paypal } from './components/Paypal';
 import { CarritoCompras } from './paginas/CarritoCompras.tsx';
+import { About } from './paginas/About';
 // // Componente principal
 //El archivo tiene el mismo nombre que la funcion
 
@@ -26,7 +27,7 @@ export const App = () => {
         <Route  path = "/" element = {<><Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> <Footer/> </>}/>
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<><Terms/> <Footer/> </> }/>
-        <Route  path = "/about" element = {<><Footer/> </> }/>
+        <Route  path = "/about" element = {<><About/> <Footer/> </> }/>
         <Route  path = "/eventos" element = {<> <Eventos/> <Footer/> </> }/>
         <Route  path = "/tienda" element = {<><Tienda/> <Footer/> </>}/>
         <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/> <Footer/></>}/>
