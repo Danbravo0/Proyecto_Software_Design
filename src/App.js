@@ -4,6 +4,7 @@ import { Navbar1 } from './components/Navbar1';
 import { Car } from './components/Car';
 import { Terms } from './paginas/Terms';
 import { Tienda } from './paginas/Tienda';
+import { Eventos } from './paginas/Eventos';
 import {Route, Routes} from 'react-router-dom';
 import { TripleColumnbutton } from './components/TripleColumnbutton';
 import { Modal1 } from './components/NewsletterModal';
@@ -25,6 +26,7 @@ export const App = () => {
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
         <Route  path = "/terms" element = {<Terms/>}/>
         <Route  path = "/tienda" element = {<><Tienda/> </>}/>
+        <Route  path = "/eventos" element = {<><Eventos/> </>}/>
         <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/></>}/>
 
       </Routes>
