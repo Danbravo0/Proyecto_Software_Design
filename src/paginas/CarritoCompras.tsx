@@ -3,6 +3,7 @@ import { UsarCarritoCompras } from "../context/ShoppingCartContext.tsx"
 import { FormatoPlata } from "../utilidades/FormatoPlata.ts";
 import { CarritoItem } from "../components/CarritoItem.tsx"
 import React, { useEffect, useState } from "react";
+
 // import storeItems from "../data/items.json"
 
 export function CarritoCompras() {
@@ -23,8 +24,8 @@ export function CarritoCompras() {
 
   }, [])
  
-  
 
+  
   return (
     <div>
       <h2>Carrito</h2>
@@ -41,6 +42,7 @@ export function CarritoCompras() {
               }, 0)
               
             )}
+
           </div>
         </Stack>
     </div>

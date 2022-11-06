@@ -9,6 +9,7 @@ import {Route, Routes} from 'react-router-dom';
 import { TripleColumnbutton } from './components/TripleColumnbutton';
 import { Modal1 } from './components/NewsletterModal';
 import { Modal2 } from './components/ReservationModal';
+import { Footer } from './components/Footer';
 // import { Formioreservation } from './components/Formioreservation';
 import { CarritoComprasProvider } from './context/ShoppingCartContext.tsx';
 import { Paypal } from './components/Paypal';
@@ -22,12 +23,20 @@ export const App = () => {
       <CarritoComprasProvider>
       <Navbar1/>
       <Routes>
-        <Route  path = "/" element = {<><Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> </>}/>
+        <Route  path = "/" element = {<><Car/> <br/> <TripleColumnbutton/> <Modal1/> <Modal2/> <Footer/> </>}/>
         {/* <Route  path = "/" element = {<> <Car/> <Terms/> </>}/> */}
+<<<<<<< HEAD
         <Route  path = "/terms" element = {<Terms/>}/>
         <Route  path = "/tienda" element = {<><Tienda/> </>}/>
         <Route  path = "/eventos" element = {<><Eventos/> </>}/>
         <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/></>}/>
+=======
+        <Route  path = "/terms" element = {<><Terms/> <Footer/> </> }/>
+        <Route  path = "/about" element = {<><Footer/> </> }/>
+        <Route  path = "/eventos" element = {<> <Footer/> </> }/>
+        <Route  path = "/tienda" element = {<><Tienda/> <Footer/> </>}/>
+        <Route  path = "/carrito" element = {<><CarritoCompras/> <Paypal/> <Footer/></>}/>
+>>>>>>> 2121d533316eecd44a3bfcb996c4b6a0691f91b7
 
       </Routes>
     </CarritoComprasProvider>

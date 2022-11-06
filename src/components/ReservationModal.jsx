@@ -15,7 +15,7 @@ export const Modal2 = () => {
 
   return (
     <>
-    <div style={{marginTop: "122px"}}>
+    <div style={{marginTop: "122px", marginBottom: "122px"}}>
     <h1 style={{textAlign: "right"}}> Reserva tu mesa aquí</h1>
     <p style={{textAlign: "right"}}> Escoge fecha y hora para tu reserva</p>
       <Button variant="primary" onClick={handleShow} style={{float: 'right'}}>
