@@ -13,7 +13,7 @@ export function CarritoItem(  { id, cantidad }: CarritoItemProps) {
   const { removeFromCarrito } = UsarCarritoCompras()
 
   const [storeItems, setItems] = useState([]);
-  const formio = 'https://zzzeqquaxnnhddq.form.io/items/submission';
+  const formio = 'https://hzfcvewuipmupiw.form.io/items/submission';
   function pullJson() {
       fetch(formio)
       .then(response => response.json())

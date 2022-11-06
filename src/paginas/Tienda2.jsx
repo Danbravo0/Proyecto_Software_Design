@@ -6,14 +6,14 @@ import Card from 'react-bootstrap/Card';
 // import storeItems from "../data/items.json"
 
 // var llamada = async() => {
-//     const api_call = await fetch(`https://zzzeqquaxnnhddq.form.io/items/submission`);
+//     const api_call = await fetch(`https://hzfcvewuipmupiw.form.io/items/submission`);
 //     return api_call.json();
 //     }
 
 export const Tienda = () => {
     const [data,setData]=useState([]);
     const getData=()=>{
-      fetch('https://zzzeqquaxnnhddq.form.io/items/submission'
+      fetch('https://hzfcvewuipmupiw.form.io/items/submission'
       ,{
         headers : { 
           'Content-Type': 'application/json',
