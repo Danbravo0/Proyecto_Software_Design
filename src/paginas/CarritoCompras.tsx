@@ -3,6 +3,10 @@ import { UsarCarritoCompras } from "../context/ShoppingCartContext.tsx"
 import { FormatoPlata } from "../utilidades/FormatoPlata.ts";
 import { CarritoItem } from "../components/CarritoItem.tsx"
 import React, { useEffect, useState } from "react";
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 // import storeItems from "../data/items.json"
 
@@ -27,6 +31,16 @@ export function CarritoCompras() {
 
   
   return (
+
+    <Container className='container-medidas'>
+    <Row>
+      <Col>
+      <Card style={{ width: '70rem' }} className = "medidas-card">
+    <Card.Body>
+      <Card.Title>Terminos y condiciones</Card.Title>
+      
+      <Card.Text>
+
     <div>
       <h2>Carrito</h2>
         <Stack gap={3}>
@@ -46,6 +60,13 @@ export function CarritoCompras() {
           </div>
         </Stack>
     </div>
+
+    </Card.Text>
+    </Card.Body>
+  </Card>
+      </Col>
+    </Row>
+  </Container>
 
   )
 }

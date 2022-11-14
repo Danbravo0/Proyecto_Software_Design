@@ -6,7 +6,6 @@ import {
 } from "@paypal/react-paypal-js";
 import { UsarCarritoCompras } from "../context/ShoppingCartContext.tsx"
 import { unfCLPtounfUSD} from "../utilidades/FormatoPlata.ts";
-import { CarritoItem } from "../components/CarritoItem.tsx"
 // This values are the props in the UI
 
 const currency = "USD";
@@ -97,7 +96,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
 
 export const  Paypal = () => {
 	return (
-		<div style={{ maxWidth: "5%", minHeight: "10%" }}>
+		<div style={{ maxWidth: "5%", minHeight: "10%" , margin: "auto", marginTop: "2rem"}}>
             <PayPalScriptProvider
                 options={{
                     "client-id": "test",

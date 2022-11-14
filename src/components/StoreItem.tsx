@@ -5,12 +5,12 @@ import { FormatoPlata } from "../utilidades/FormatoPlata.ts";
 
 type StoreItemProps = {
     id: Number
-    nombreItem: string
+    id1: string
     categoria : string
     precio : Number
     urlImagen: string}
 
-export function  StoreItem ({ id, nombreItem,categoria, precio,urlImagen } : 
+export function  StoreItem ({ id, id1,categoria, precio,urlImagen } : 
     StoreItemProps) {
     const { getItemQuantity,increaseCarritoQuantity,decreaseCarritoQuantity,removeFromCarrito} = UsarCarritoCompras()
     const cantidad = getItemQuantity(id)
@@ -26,7 +26,7 @@ export function  StoreItem ({ id, nombreItem,categoria, precio,urlImagen } :
 
         <Card.Body className="d-flex flex-column">
           <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
-            <span className='fs-2 NombreItemTienda'>{nombreItem}</span>
+            <span className='fs-2 id1Tienda'>{id1}</span>
             <span className='ms-2 text-muted PrecioItemTienda'>{FormatoPlata(precio)}</span>
           </Card.Title>
 

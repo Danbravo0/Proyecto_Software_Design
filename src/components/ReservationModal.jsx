@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 // import Form from 'react-bootstrap/Form';
-import Form from 'react-formio';
 import Image from 'react-bootstrap/Image'
 import imagen_feature_1 from "../resources/mesas.jpg";
 import { Formioreservation } from '../components/Formioreservation';
