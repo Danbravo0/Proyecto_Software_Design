@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-
-export const Modal1 = () => {
+import Image from 'react-bootstrap/Image';
+import imagen_feature_2 from "../resources/Ricardo.jpg";
+export const Modal2 = () => {
     
   const [show, setShow] = useState(false);
 
@@ -12,9 +13,11 @@ export const Modal1 = () => {
 
   return (
     <>
-    <div style={{marginTop: "122px"}}>
-    <h1> Puedes inscribirte al newsletter aquí</h1>
-    <p > No te pierdas ninguna noticia</p>
+    <div style={{marginTop: "122px", marginBottom: "122px" ,backgroundColor: "#dee1d1"}}>
+    <div style={{ display: "flex", alignItems: "center",justifyContent:"center"}}>
+    <div class="col-md-5" style={{ display: "flex", alignItems:"center",flexDirection:"column"}}>
+    <h1 style={{marginTop: "auto", padding: "12px",textAlign: "center"}}> Puedes inscribirte al newsletter aquí</h1>
+    <p style={{textAlign: "center"}} > No te pierdas ninguna noticia</p>
       <Button variant="primary" onClick={handleShow}>
         Inscribirte al Newsletter »
       </Button>
@@ -47,6 +50,13 @@ export const Modal1 = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+      </div>
+      
+
+      <div class="col-md-7" style={{textAlign: "right"}}>
+        <Image className = "medidas-feature2" src ={imagen_feature_2} fluid="true" />
+      </div>
+      </div>
       </div>
     </>
   );

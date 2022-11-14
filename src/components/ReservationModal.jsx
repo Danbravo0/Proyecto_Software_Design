@@ -3,10 +3,12 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 // import Form from 'react-bootstrap/Form';
 import Form from 'react-formio';
+import Image from 'react-bootstrap/Image'
+import imagen_feature_1 from "../resources/mesas.jpg";
 import { Formioreservation } from '../components/Formioreservation';
 
 
-export const Modal2 = () => {
+export const Modal1 = () => {
     
   const [show, setShow] = useState(false);
 
@@ -15,13 +17,19 @@ export const Modal2 = () => {
 
   return (
     <>
-    <div style={{marginTop: "122px", marginBottom: "122px"}}>
-    <h1 style={{textAlign: "right"}}> Reserva tu mesa aquí</h1>
-    <p style={{textAlign: "right"}}> Escoge fecha y hora para tu reserva</p>
-      <Button variant="primary" onClick={handleShow} style={{float: 'right'}}>
+    <div style={{marginTop: "122px", marginBottom: "122px" ,backgroundColor: "#dee1d1"}}>
+    <div style={{ display: "flex", alignItems: "center",justifyContent:"center"}}>
+    <div class="col-md-7">
+        <Image className = "medidas-feature1" src ={imagen_feature_1} fluid="true" />
+    </div>
+      <div class="col-md-5" style={{ display: "flex", alignItems:"center",flexDirection:"column"}}>
+      <h1 style={{marginTop: "auto", padding: "12px",textAlign: "center"}}> Reserva tu mesa aquí</h1>
+      <p style={{textAlign: "center"}}> Escoge fecha y hora para tu reserva</p>
+    
+    <Button variant="primary" onClick={handleShow} style={{maxWidth:"50%"}}>
         Reserva aquí »
       </Button>
-
+      
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Reserva</Modal.Title>
@@ -42,6 +50,10 @@ export const Modal2 = () => {
           </Button>
         </Modal.Footer> */}
       </Modal>
+      </div>
+
+    </div>
+
       </div>
     </>
   );
