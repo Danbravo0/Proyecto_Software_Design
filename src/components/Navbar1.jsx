@@ -1,6 +1,7 @@
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { UsarCarritoCompras } from '../context/ShoppingCartContext.tsx'
+import logo from '../resources/logo hd los buenos.png'
 
 export function Navbar1() {
   // const 
@@ -9,6 +10,9 @@ export function Navbar1() {
     <NavbarBs sticky="top" className="color-nav">
       <Container>
         <Nav className="me-auto">
+          <Nav.Link to="/" as={NavLink} className = "nav-item-text" >
+            <img src={logo} alt="logo" className="logo"/>
+          </Nav.Link>
           <Nav.Link to="/" as={NavLink} className = "nav-item-text">
             Home
           </Nav.Link>

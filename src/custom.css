@@ -95,3 +95,10 @@
     margin-right: auto;
     margin-left: auto;
    }
+
+.logo{
+    margin-top: -5px;
+    max-width: 75px;
+    max-height:  75px;
+    
+}
